@@ -49,7 +49,7 @@ public class HttpFormFileTests
         var file = new HttpFormFile("file", "test.txt", bytes);
         Assert.AreEqual("file", file.ParameterName);
         Assert.AreEqual("test.txt", file.FileName);
-        Assert.AreEqual(bytes, file.Bytes);
+        Assert.AreSequenceEqual(bytes, file.Bytes);
     }
 
     [TestMethod]
@@ -59,7 +59,7 @@ public class HttpFormFileTests
         var file = new HttpFormFile("file", "test.txt", bytes);
         Assert.AreEqual("file", file.ParameterName);
         Assert.AreEqual("test.txt", file.FileName);
-        Assert.AreEqual(bytes, file.Bytes);
+        Assert.AreSequenceEqual(bytes, file.Bytes);
     }
 
     [TestMethod]
@@ -70,7 +70,7 @@ public class HttpFormFileTests
 
         Assert.AreEqual("file", file.ParameterName);
         Assert.AreEqual("test.txt", file.FileName);
-        Assert.AreEqual(bytes, file.Bytes);
+        Assert.AreSequenceEqual(bytes, file.Bytes);
     }
 
     [TestMethod]

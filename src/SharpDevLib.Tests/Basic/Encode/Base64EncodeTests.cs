@@ -17,7 +17,7 @@ public class Base64EncodeTests : EncodeTests
     {
         Assert.AreEqual(_emptyBytes.Serialize(), "".Base64Decode().Serialize());
         Assert.AreEqual(_emptyBytes.Serialize(), " ".Base64Decode().Serialize());
-        Assert.AreNotEqual(_bytes, _base64.Base64Decode());
+        Assert.AreSequenceEqual(_bytes, _base64.Base64Decode());
         Assert.AreEqual(_str, _base64.Base64Decode().Utf8Encode());
         Assert.AreEqual(_bytes.Serialize(), _base64.Base64Decode().Serialize());
     }

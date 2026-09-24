@@ -14,7 +14,7 @@ public static class EnumerableNullCheck
     /// <typeparam name="T">可枚举对象元素类型</typeparam>
     /// <param name="source">需要断言的可枚举对象</param>
     /// <returns>如果可枚举对象为 null 或长度为 0 返回 true,否则返回 false</returns>
-    public static bool IsNullOrEmpty<T>([NotNullWhen(false)] this IEnumerable<T>? source) => source is null || source.Count() <= 0;
+    public static bool IsNullOrEmpty<T>([NotNullWhen(false)] this IEnumerable<T>? source) => source is null || !source.Any();
 
     /// <summary>
     /// 断言一个可枚举对象是否不为 null 并且长度大于 0
@@ -22,5 +22,5 @@ public static class EnumerableNullCheck
     /// <typeparam name="T">可枚举对象元素类型</typeparam>
     /// <param name="source">需要断言的可枚举对象</param>
     /// <returns>如果可枚举对象不为 null 且长度大于 0 返回 true,否则返回 false</returns>
-    public static bool NotNullOrEmpty<T>([NotNullWhen(true)] this IEnumerable<T>? source) => source is not null && source.Count() > 0;
+    public static bool NotNullOrEmpty<T>([NotNullWhen(true)] this IEnumerable<T>? source) => source is not null && source.Any();
 }

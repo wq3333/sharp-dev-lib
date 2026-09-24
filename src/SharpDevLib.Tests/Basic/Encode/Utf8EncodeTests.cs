@@ -16,7 +16,7 @@ public class Utf8EncodeTests : EncodeTests
     public void DecodeTest()
     {
         Assert.AreEqual(_emptyBytes.Serialize(), "".Utf8Decode().Serialize());
-        Assert.AreNotEqual(_bytes, _str.Utf8Decode());
+        Assert.AreSequenceEqual(_bytes, _str.Utf8Decode());
         Assert.AreEqual(_bytes.Serialize(), _str.Utf8Decode().Serialize());
     }
 }

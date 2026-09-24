@@ -1,6 +1,4 @@
-﻿
-using ICSharpCode.SharpZipLib.BZip2;
-using ICSharpCode.SharpZipLib.GZip;
+﻿using ICSharpCode.SharpZipLib.GZip;
 
 namespace SharpDevLib.Compression.Internal.DeCompress;
 

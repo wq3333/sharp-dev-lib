@@ -8,14 +8,14 @@
 public class NameDataRequest<TData> : DataRequest<TData>
 {
     /// <summary>
-    /// 示例化 NameDataRequest 对象
+    /// 实例化 NameDataRequest 对象
     /// </summary>
     public NameDataRequest()
     {
     }
 
     /// <summary>
-    /// 示例化 NameDataRequest 对象并初始化名称和数据
+    /// 实例化 NameDataRequest 对象并初始化名称和数据
     /// </summary>
     /// <param name="name">名称</param>
     /// <param name="data">要包装的数据对象</param>

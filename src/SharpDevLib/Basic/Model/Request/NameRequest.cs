@@ -7,14 +7,14 @@
 public class NameRequest : BaseRequest
 {
     /// <summary>
-    /// 示例化 NameRequest 对象
+    /// 实例化 NameRequest 对象
     /// </summary>
     public NameRequest()
     {
     }
 
     /// <summary>
-    /// 示例化 NameRequest 对象并初始化名称
+    /// 实例化 NameRequest 对象并初始化名称
     /// </summary>
     /// <param name="name">名称</param>
     public NameRequest(string? name)

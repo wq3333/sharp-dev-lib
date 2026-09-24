@@ -6,7 +6,7 @@ namespace SharpDevLib;
 /// HTTP请求
 /// </summary>
 /// <remarks>
-/// 示例化HTTP请求
+/// 实例化HTTP请求
 /// </remarks>
 /// <param name="url">请求URL地址</param>
 public class HttpRequestModel(string url)//改名为HttpRequestModel,防止和Microsoft.AspNetCore.Http.HttpRequest命名冲突

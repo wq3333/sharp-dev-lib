@@ -18,7 +18,7 @@ public class HexStringEncodeTests : EncodeTests
     {
         Assert.AreEqual(_emptyBytes.Serialize(), "".HexStringDecode().Serialize());
         Assert.AreEqual(_emptyBytes.Serialize(), " ".HexStringDecode().Serialize());
-        Assert.AreNotEqual(_bytes, _hex.HexStringDecode());
+        Assert.AreSequenceEqual(_bytes, _hex.HexStringDecode());
         Assert.AreEqual(_bytes.Serialize(), _hex.HexStringDecode().Serialize());
     }
 

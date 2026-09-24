@@ -8,14 +8,14 @@
 public class DataRequest<TData> : BaseRequest
 {
     /// <summary>
-    /// 示例化 DataRequest 对象
+    /// 实例化 DataRequest 对象
     /// </summary>
     public DataRequest()
     {
     }
 
     /// <summary>
-    /// 示例化 DataRequest 对象并初始化数据
+    /// 实例化 DataRequest 对象并初始化数据
     /// </summary>
     /// <param name="data">要包装的数据对象</param>
     public DataRequest(TData? data)
